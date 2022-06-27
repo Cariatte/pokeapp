@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:pokemon_app/view/home_view.dart';
 import 'package:pokemon_app/view/login_view.dart';
+import 'package:pokemon_app/view/regiao_info_view.dart';
 import 'package:pokemon_app/widgets/custom_material_color.dart';
 
 Future main() async {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Pokemon App',
       routes: {
         "/home": (context) => const Home(),
+        "/regiao": (context) => const RegiaoInfoView(),
       },
       home: MainPage(),
       theme: ThemeData(

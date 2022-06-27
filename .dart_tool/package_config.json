@@ -128,6 +128,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "http",
+      "rootUri": "file:///D:/dev/newflutter/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///D:/dev/newflutter/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1",
       "packageUri": "lib/",
@@ -242,7 +248,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-06-25T02:40:42.731869Z",
+  "generated": "2022-06-26T23:23:34.253703Z",
   "generator": "pub",
   "generatorVersion": "2.17.5"
 }
