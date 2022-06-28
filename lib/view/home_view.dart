@@ -15,6 +15,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<Results> allGenerations = [];
   List<MainRegion> pokemonRegion = [];
+  String regiao = "";
 
   @override
   void initState() {
@@ -85,7 +86,10 @@ class _HomeState extends State<Home> {
                                         border: Border.all(width: 1)),
                                     child: InkWell(
                                       onTap: () {
-                                        Navigator.pushNamed(context, '/regiao');
+                                        regiao = snapshot.data!.name[0].toUpperCase() + snapshot.data!.name.substring(1).toLowerCase();
+                                        Navigator.pushNamed(context, '/regiao', arguments: {
+                                          "regiao": regiao
+                                        });
                                       },
                                       child: ListTile(
                                         title: Center(
